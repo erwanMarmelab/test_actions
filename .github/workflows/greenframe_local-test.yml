@@ -1,0 +1,24 @@
+name: "GreenFrame Action"
+description: "Perform a GreenFrame analysis"
+author: "Marmelab"
+branding:
+  icon: "activity"
+  color: "green"
+env:
+  GREENFRAME_SECRET_TOKEN:
+    description: "GreenFrame Secret Token"
+    required: true
+inputs:
+  CONFIG_PATH:
+    description: "Path to .greenframe.yml"
+    default: .greenframe.yml
+runs:
+  using: "composite"
+  steps:
+    - run: curl https://assets.greenframe.io/install.sh | bash
+      shell: bash
+    - run: node -v
+      shell: bash
+    # - run: greenframe analyze -C ${{ inputs.CONFIG_PATH }}
+    - run: greenframe analyze ${{ inputs.CONFIG_PATH }}
+      shell: bash
