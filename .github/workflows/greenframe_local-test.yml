@@ -1,6 +1,7 @@
 name: "GreenFrame Action Local Test"
 description: "Perform a GreenFrame analysis"
 author: "Marmelab"
+run-name: "my own greenframe GitHub-Action with local code"
 branding:
   icon: "activity"
   color: "green"
