@@ -1,2 +1,2 @@
-- name: GreenFrame Action
-  uses: marmelab/greenframe-action@1.0.0
+name: GreenFrame Action
+uses: marmelab/greenframe-action@1.0.0
