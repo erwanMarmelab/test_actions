@@ -3,12 +3,12 @@ run-name: "my own greenframe GitHub-Action with local code"
 description: "Perform a GreenFrame analysis"
 author: "Marmelab"
 on: [push]
-runs:
+jobs:
   # using: "composite"
   steps:
     - run: curl https://assets.greenframe.io/install.sh | bash
-      shell: bash
+      # shell: bash
     - run: node -v
-      shell: bash
+      # shell: bash
     - run: greenframe analyze -C ${{ inputs.CONFIG_PATH }}
-      shell: bash
+      # shell: bash
