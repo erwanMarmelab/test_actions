@@ -10,5 +10,7 @@ jobs:
         shell: bash
       - run: node -v
         shell: bash
-      - run: ls
+      - run: greenframe analyze -C https://www.google.com/
+        shell: bash
+      - run: greenframe analyze https://www.google.com/
         shell: bash
