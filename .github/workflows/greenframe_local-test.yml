@@ -1,7 +1,5 @@
 name: "GreenFrame Action Local Test"
 run-name: "my own greenframe GitHub-Action with local code"
-description: "Perform a GreenFrame analysis"
-author: "Marmelab"
 on: [push]
 jobs:
   # runs-on: "composite"
