@@ -2,7 +2,7 @@ name: "GreenFrame Action Local Test"
 run-name: "my own greenframe GitHub-Action with local code"
 description: "Perform a GreenFrame analysis"
 author: "Marmelab"
-runs:
+jobs:
   using: "composite"
   steps:
     - run: curl https://assets.greenframe.io/install.sh | bash
