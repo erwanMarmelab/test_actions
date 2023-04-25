@@ -10,5 +10,5 @@ jobs:
         shell: bash
       - run: node -v
         shell: bash
-      - run: cat ../../index.html
+      - run: ls
         shell: bash
