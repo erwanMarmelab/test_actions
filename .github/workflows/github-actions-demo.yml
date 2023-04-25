@@ -1,2 +1,2 @@
-name: ReportGenerator
-uses: danielpalme/ReportGenerator-GitHub-Action@5.1.19
+- name: GreenFrame Action
+  uses: marmelab/greenframe-action@1.0.0
