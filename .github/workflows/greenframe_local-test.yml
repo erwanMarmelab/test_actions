@@ -4,7 +4,7 @@ description: "Perform a GreenFrame analysis"
 author: "Marmelab"
 on: [push]
 jobs:
-  # using: "composite"
+  runs-on: "composite"
   steps:
     - run: curl https://assets.greenframe.io/install.sh | bash
       shell: bash
