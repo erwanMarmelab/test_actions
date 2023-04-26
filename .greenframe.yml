@@ -1,5 +1,5 @@
 baseURL: "http://localhost:3000/"
-# scenarios :
-#   - path: ./scenario.js
-#   name: My fisrt scenario
+scenarios :
+  - path: ./scenario.js
+  name: My fisrt scenario
 #   threshold: 0.95
