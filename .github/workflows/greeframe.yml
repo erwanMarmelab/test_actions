@@ -6,17 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Run a GreenFrame CLI Action
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0 # Fetch all the git history to enable git comparison
+          fetch-depth: 0
       - name: Start project
         run: |
           make install
-          make start & marmelab/greenframe-action@1.0.0
-      # - name: GreenFrame Analysis
-      #   uses: marmelab/greenframe-action@1.0.0
+          make start
+      - name: GreenFrame Analysis
+        uses: marmelab/greenframe-action@1.0.0
         env:
           GREENFRAME_SECRET_TOKEN: dd9226f13ec6ee83cff9aa77620eaae914bd32fb
