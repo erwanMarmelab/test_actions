@@ -14,9 +14,9 @@ jobs:
           fetch-depth: 0 # Fetch all the git history to enable git comparison
       - name: Start project
         run: |
-          npm install react-scripts@latest
-          npm start
-      - name: GreenFrame Analysis
-        uses: marmelab/greenframe-action@1.0.0
+          make install
+          make start & marmelab/greenframe-action@1.0.0
+      # - name: GreenFrame Analysis
+      #   uses: marmelab/greenframe-action@1.0.0
         env:
           GREENFRAME_SECRET_TOKEN: dd9226f13ec6ee83cff9aa77620eaae914bd32fb
