@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Fetch all the git history to enable git comparison
+      - name: Start project
+        run: npm start
       - name: GreenFrame Analysis
         uses: marmelab/greenframe-action@1.0.0
         env:
