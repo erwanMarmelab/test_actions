@@ -13,7 +13,7 @@ jobs:
       - name: Start project
         run: |
           make install
-          make start
+          make start &
       - name: GreenFrame Analysis
         uses: marmelab/greenframe-action@1.0.0
         env:
