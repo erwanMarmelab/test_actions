@@ -10,9 +10,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Start project
+      - name: Start database
         run: |
           docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5867:5867 -d postgres
+          echo "------------------------------------------"
+          docker ps
+      - name: Start project
+        run: |
           make install-app
           make start-app &
       - name: GreenFrame Analysis

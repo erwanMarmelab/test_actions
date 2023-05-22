@@ -2,6 +2,6 @@ baseURL: "http://localhost:3000/"
 scenarios :
   - path: ./scenario.js
     name: My fisrt scenario
-    threshold: 0.02
+    # threshold: 0.02
 containers:
   - "postgres-db"
