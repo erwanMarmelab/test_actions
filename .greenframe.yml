@@ -3,3 +3,5 @@ scenarios :
   - path: ./scenario.js
     name: My fisrt scenario
     threshold: 0.02
+containers:
+  - "postgres-db"

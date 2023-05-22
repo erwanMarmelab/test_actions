@@ -12,8 +12,9 @@ jobs:
           fetch-depth: 0
       - name: Start project
         run: |
-          make install
-          make start &
+          docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5867:5867 -d postgres
+          make install-app
+          make start-app &
       - name: GreenFrame Analysis
         uses: marmelab/greenframe-action@1.0.0
         env:
