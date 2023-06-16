@@ -22,7 +22,7 @@ jobs:
       - name: GreenFrame Analysis
         env:
           GREENFRAME_SECRET_TOKEN: c6949e9cab9cfb354ecd2846a7072126ab4e6adc
-        run :
+        run: |
           curl https://assets.greenframe.io/install.sh | bash
           export GREENFRAME_SECRET_TOKEN=c6949e9cab9cfb354ecd2846a7072126ab4e6adc
           API_URL="https://2cad-81-250-164-94.ngrok-free.app" greenframe analyze -C ./.greenframe.yml
